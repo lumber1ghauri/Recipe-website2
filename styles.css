@@ -1,0 +1,471 @@
+/*home */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*about */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.about-section {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('home.jpg');
+    background-size: cover;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1; 
+    text-align: center;
+    color: #fff;
+    padding: 20px; 
+}
+
+.team-section {
+    position: relative; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 80px 0; 
+    text-align: center;
+}
+
+.team-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('home.jpg');
+    background-size: cover;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.team-section h2 {
+    margin-bottom: 60px;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-section p {
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-section, .team-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 110px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.team-member img {
+    display: block; 
+    width: 150px;
+    border-radius: 200%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    margin: 10px;
+}
+
+.team-member p {
+    margin-top: 5px;
+    color: #666;
+}
+/*recipes*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.recipe-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-info {
+    display: none;
+}
+
+.recipe-card:hover .recipe-info {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+ul, ol {
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+.recipe-cards {
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recipe-card {
+    width: calc(30% - 20px);
+    margin: 0 10px 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.recipe-card h2 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.recipe-card p {
+    margin-top: 5px;
+    color: #666;
+}
+
+
+/* tips */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.tips,
+.guides {
+    flex-basis: 45%;
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tips:before,
+.guides:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* contact info */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact-form, .business-email {
+    width: 45%;
+}
+
+.contact-form h2, .business-email h2 {
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-form form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form form input[type="text"]::placeholder,
+.contact-form form input[type="email"]::placeholder,
+.contact-form form textarea::placeholder {
+    color: #171616;
+}
+
+.contact-form form input[type="text"]:-ms-input-placeholder,
+.contact-form form input[type="email"]:-ms-input-placeholder,
+.contact-form form textarea:-ms-input-placeholder {
+    color: #0b0b0b;
+}
+
+.contact-form form input[type="text"]::-ms-input-placeholder,
+.contact-form form input[type="email"]::-ms-input-placeholder,
+.contact-form form textarea::-ms-input-placeholder {
+    color: #080707;
+}
+
+.contact-form form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form form textarea {
+    resize: vertical;
+}
+
+.contact-form form input[type="submit"] {
+    background-color: #333;
+    color: #fefefe;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.business-email p {
+    margin-top: 20px;
+    
+}
+
+.business-email a {
+    color: #333;
+}
+
+.business-email a:hover {
+    text-decoration: underline;
+}
+
+
+
